@@ -1,4 +1,5 @@
 .DS_Store
-nextjs-src/node_modules
-nextjs-src/out
-nextjs-src/.next
+/node_modules
+/out
+.next
+

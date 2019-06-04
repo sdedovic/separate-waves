@@ -1,6 +1,7 @@
 {
     "version": 2,
     "name": "separate-waves",
+    "alias": "separatewaves.com",
     "builds": [
         { "src": "next.config.js", "use": "@now/next" }
     ]

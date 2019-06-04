@@ -1,7 +1,6 @@
 import React from 'react';
 import NextHead from 'next/head';
 import { string } from 'prop-types';
-import { colors } from '../static/vars';
 
 const defaultDescription = '';
 const defaultOGURL = '';

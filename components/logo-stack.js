@@ -2,7 +2,7 @@ import * as _ from 'lodash';
 import Logo from './logo';
 import { colors } from '../static/vars';
 
-const numLogos = 100;
+const numLogos = 70;
 const hiddenChance = 0.5;
 const specialChance = 0.1;
 

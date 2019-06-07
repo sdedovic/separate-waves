@@ -2,19 +2,29 @@ import React from 'react';
 
 const Content = props => (
     <div className="content-block">
-        <div style={{float: 'left', width: '50%'}}>
-            <h1>Saturday July 13</h1>
-            <h2>Music</h2>
-            <p>Jake Victor Quartet</p>
-            <p>Andy Danstrom (solo)</p>
-            <p>Henry Thiemann</p>
-            <p>... and more</p>
+        <div className='content-days'>
+            <div className='content-day'>
+                <h1>Saturday July 13</h1>
+                <h2>Music</h2>
+                <p>Jake Victor Quartet</p>
+                <p>Andy Danstrom (solo)</p>
+                <p>Henry Thiemann</p>
+                <p>... and more</p>
+            </div>
 
-            <br/>
-            <br/>
-            <br/>
+            <div className='content-day'>
+                <h1>Sunday July 14</h1>
+                <h2>Music</h2>
+                <p>Jake Victor (solo)</p>
+                <p>Poncho</p>
+                <p>Such Chill Much Jam</p>
+                <p>... and more</p>
+            </div>
+        </div>
 
-            <h2>Artists both days</h2>
+
+        <div>
+            <h1>Artists both days</h1>
             <p>Kelly Cunningham</p>
             <p>Stevan Dedovic</p>
             <p>Sean Griffin</p>
@@ -33,54 +43,48 @@ const Content = props => (
             <p>Fulton Street Collective</p>
             <p>1821 W. Hubbard Street, Suite 307</p>
             <p>Chicago, IL 60612</p>
-
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-
-            <footer>Copyright © 2019 ROOMSIX, LLC. All rights reserved.</footer>
-
         </div>
-        <div style={{float: 'right'}}>
-            <h1>Sunday July 14</h1>
-            <h2>Music</h2>
-            <p>Jake Victor (solo)</p>
-            <p>Poncho</p>
-            <p>Such Chill Much Jam</p>
-            <p>... and more</p>
-        </div>
+
+        <footer style={{paddingTop: '100px'}}>
+            Copyright © 2019 ROOMSIX, LLC. All rights reserved.
+        </footer>
 
         <br/>
 
-            <style jsx>{`
+        <style jsx>{`
         .content-block {
             position: absolute;
             top: 2500px;
-            left: 50px;
+            width: 100%;
+            padding: 0 50px;
+        }
+        .content-days {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .content-day {
+            flex: 1 400px;
         }
         h1 {
+            margin-top: 20px;
+            padding-bottom: 5px;
+            align-self: space-around;
             font-weight: 900;
-            font-size: 3.5vw;
             text-transform: uppercase;
+            font-size: 2.5em;
         }
         h2 {
+            margin-top: 10px;
             font-weight: 900;
-            font-size: 2.75vw;
             text-decoration: underline;
+            font-size: 2.2em;
 
         }
         p {
             font-weight: 900;
-            font-size: 2.5vw;
+            font-size: 25px;
+            font-size: 2em;
         }
     `}</style>
     </div>

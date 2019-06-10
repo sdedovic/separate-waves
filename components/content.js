@@ -147,8 +147,10 @@ const Content = props => (
         background-color: #00000050;
       }
       .bio-text {
+        font-size: 20px;
         padding: 20px;
-        padding-right: 40px;
+        padding-right: 0px;
+        margin-right: -25px;
       }
       .social {
         display: inline;

@@ -2,9 +2,9 @@ import * as _ from 'lodash';
 import Logo from './logo';
 import { colors } from '../static/vars';
 
-const numLogos = 70;
-const hiddenChance = 0.5;
-const specialChance = 0.1;
+const numLogos = 50;
+const hiddenChance = 0.3;
+const specialChance = 0.3;
 
 const LogoStack = props => {
   const range = _.range(numLogos);
@@ -22,19 +22,19 @@ const LogoStack = props => {
       {range.map(idx => {
         const special = specialOnes.includes(idx);
         const hidden = hiddenOnes.includes(idx);
-        return idx !== 0 && hidden && !special ? null : (
+        return idx !== 0 && hidden ? null : (
           <div
             className="logo"
             key={idx}
             style={{
               top: `${idx * (props.size / 3)}vw`,
               zIndex: special ? 1 : 0,
-              opacity: 1 - idx / numLogos,
+              opacity: 0.3,
             }}
           >
             <Logo
               size={props.size}
-              color={special ? colors.yellow : colors.cream}
+              color={special ? colors.gray : colors.cream}
               stroke={special ? colors.gray : null}
             />
           </div>
@@ -42,8 +42,10 @@ const LogoStack = props => {
       })}
       <style jsx>{`
         .logo-stack {
-          position: relative;
-          margin-top: 40px;
+          z-index: -1;
+          position: fixed;
+          top: -40px;
+          left: 50%;
         }
         .logo {
           position: absolute;

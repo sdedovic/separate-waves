@@ -40,7 +40,7 @@ const Head = props => (
     <style jsx global>{`
       html {
         box-sizing: border-box;
-        font-size: 16px;
+        font-size: 12px;
       }
 
       *,
@@ -54,6 +54,24 @@ const Head = props => (
       body {
         font-family: 'Source Sans Pro', sans-serif;
         overflow-x: hidden;
+      }
+
+      @media (min-width: 600px) {
+        html {
+          font-size: 14px;
+        }
+      }
+
+      @media (min-width: 900px) {
+        html {
+          font-size: 16px;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        html {
+          font-size: 18px;
+        }
       }
     `}</style>
   </div>

@@ -3,6 +3,6 @@ export const colors = {
   red: '#b52c4b',
   cream: '#ccc0a7',
   yellow: '#f0fd49',
-  gray: '#7b7b7b',
+  gray: '#626262',
   black: '#000000',
 };

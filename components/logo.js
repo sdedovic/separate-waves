@@ -9,12 +9,14 @@ const Logo = props => (
       .logo {
         position: relative;
         display: inline-block;
+        margin-bottom: 8vw;
       }
 
       .separate,
       .waves {
         text-transform: uppercase;
         font-weight: 600;
+        line-height: 1;
         font-size: ${props.size || 1}vw;
         color: ${props.stroke ? 'transparent' : props.color || colors.black};
         -webkit-text-stroke: ${props.stroke
@@ -28,7 +30,7 @@ const Logo = props => (
       .waves {
         position: absolute;
         left: 26%;
-        top: 37%;
+        top: 48%;
       }
     `}</style>
   </span>

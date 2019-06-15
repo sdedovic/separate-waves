@@ -10,32 +10,28 @@ const Head = props => (
   <div>
     <NextHead>
       <meta charSet="UTF-8" />
-      <title>{props.title || ''}</title>
-      <meta
-        name="description"
-        content={props.description || defaultDescription}
-      />
+      <title>Separate Waves</title>
+      <meta name="description" content="Art and Live Music"/>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="icon" sizes="192x192" href="/static/touch-icon.png" />
-      <link rel="apple-touch-icon" href="/static/touch-icon.png" />
-      <link rel="mask-icon" href="/static/favicon-mask.svg" color="#49B882" />
       <link rel="icon" href="/static/favicon.ico" />
-      <link
-        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
-        rel="stylesheet"
-      />
-      <meta property="og:url" content={props.url || defaultOGURL} />
-      <meta property="og:title" content={props.title || ''} />
-      <meta
-        property="og:description"
-        content={props.description || defaultDescription}
-      />
-      <meta name="twitter:site" content={props.url || defaultOGURL} />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:image" content={props.ogImage || defaultOGImage} />
-      <meta property="og:image" content={props.ogImage || defaultOGImage} />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"/>
+
+      <meta property="og:site_name" content="Separate Waves"/>
+      <meta property="og:type" content="article"/>
+      <meta property="og:title" content="Art and Live Music"/>
+      <meta property="og:description" content="Saturday, Jul 13, 2019, 7PM and Sunday, Jul 14, 2019, 3PM. Chicago-based artists Kelly Ann Cunningham, Stevan Dedovic, and Sean Griffin will be hosting a collaborative art exhibition at the Fulton Street Collective in Chicago’s West Town neighborhood. Music performances will accompany the art featuring the Jake Victor Quartet, Such Jam Much Chill, and Poncho. Several other artists and musicians will also be featured over the course of the event. Despite the disparate styles among the artists, all emphasis the importance of lines, color, and process."/>
+      <meta property="og:url" content="https://www.separatewaves.com"/>
+      <meta property="og:image" content="https://separatewaves.com/static/display.png"/>
+      <meta property="geo.placename" content="Chicago, IL, us"/>
+
+      <meta property="twitter:description" content="Chicago-based artists Kelly Ann Cunningham, Stevan Dedovic, and Sean Griffin will be hosting a collaborative art exhibition at the Fulton Street Collective in Chicago’s West Town neighborhood. Music performances will accompany the art featuring the Jake Victor Quartet, Such Jam Much Chill, and Poncho. Several other artists and musicians will also be featured over the course of the event. Despite the disparate styles among the artists, all emphasis the importance of lines, color, and process."/>
+      <meta name="twitter:label1" value="Where"/>
+      <meta name="twitter:data1" value="Fulton Street Collective, 1821 W. Hubbard Street, Suite 307, Chicago, IL 60612"/>
+      <meta name="twitter:label2" value="When"/>
+      <meta name="twitter:data2" value="Saturday, Jul 13, 2019, 7PM and Sunday, Jul 14, 2019, 3PM"/>
+
+
+
     </NextHead>
     <style jsx global>{`
       html {

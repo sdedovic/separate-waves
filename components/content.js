@@ -3,7 +3,7 @@ import React from 'react';
 const Content = props => (
   <div className="content">
     <div className="aligner">
-      <div className="content-days">
+      <div className="content-days white">
         <div className="content-section">
           <h1>Saturday July 13</h1>
           <h2>Music</h2>
@@ -23,7 +23,7 @@ const Content = props => (
         </div>
       </div>
 
-      <div className="content-section">
+      <div className="content-section white">
         <h1>Artists both days</h1>
         <p>Kelly Cunningham</p>
         <p>Stevan Dedovic</p>
@@ -40,12 +40,12 @@ const Content = props => (
 
       <br />
       <br />
-      <hr />
+      <br />
 
-      <div className="content-section">
+      <div className="content-section white">
         <h1>Visual Artists</h1>
 
-        <div className="bio bio-w">
+        <div className="bio">
           <h2>Stevan Dedovic</h2>
           <a href="https://www.instagram.com/mr_praline">
               <img className='social' height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/instagram.svg" />
@@ -55,7 +55,7 @@ const Content = props => (
 
         <br />
 
-        <div className="bio bio-w">
+        <div className="bio">
           <h2>Kelly Ann Cunningham</h2>
           {/*<a href="">*/}
               {/*<img className='social' height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/instagram.svg" />*/}
@@ -65,7 +65,7 @@ const Content = props => (
 
         <br />
 
-        <div className="bio bio-w">
+        <div className="bio">
           <h2>Sean Griffin</h2>
           <a href="https://www.instagram.com/re_person_i_knew">
               <img className='social' height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/instagram.svg" />
@@ -77,12 +77,12 @@ const Content = props => (
 
       <br />
       <br />
-      <hr />
+      <br />
 
-      <div className="content-section">
+      <div className="content-section white">
         <h1>Musicians</h1>
 
-        <div className="bio bio-w">
+        <div className="bio">
           <h2>Jake Victor</h2>
           <a href='https://www.jakevictormusic.com'>
               <img className='social' height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/internetexplorer.svg" />
@@ -111,7 +111,7 @@ const Content = props => (
       <br />
       <br />
 
-      <div className="content-section">
+      <div className="content-section white">
         <p>Fulton Street Collective</p>
         <p>1821 W. Hubbard Street, Suite 307</p>
         <p>Chicago, IL 60612</p>
@@ -140,11 +140,8 @@ const Content = props => (
       .bio {
         padding-left: 5px;
       }
-      .bio-w {
-        background-color: #ffffff30;
-      }
-      .bio-b {
-        background-color: #00000050;
+      .white {
+        background-color: #ffffffb0;
       }
       .bio-text {
         font-size: 20px;

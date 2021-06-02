@@ -36,14 +36,13 @@ const Head = props => (
 
         <style jsx global>{`
           body {
-            background-image: url(/static/poster.jpg);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100% auto;
-            
-            height: 2560px;
+            margin: 0;
+            background: #101010;
           }
         `}</style>
+
+        <img src="/static/poster.jpg" style={{ width: '100%' }} />
+
     </div>
 );
 
